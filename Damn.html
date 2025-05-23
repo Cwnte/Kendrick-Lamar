@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album View</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .album-view {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .album-art {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .album-art:hover {
+            transform: scale(1.02);
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .nav-button {
+            text-decoration: none;
+            color: white;
+            background-color: #000000;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #000000;
+        }
+        .album-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .album-title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .album-artist {
+            font-size: 1.2rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="album-view">
+            <div class="album-info">
+                <h1 class="album-title">To Pimp a Butterfly</h1>
+                <p class="album-artist">Kendrick Lamar</p>
+            </div>
+            
+            <a href="butter.html" class="album-link">
+                <img src="images/Damn.jpeg" alt="To Pimp a Butterfly Album Cover" class="album-art">
+            </a>
+            
+            <div class="navigation">
+                <a href="index.html" class="nav-button">Home</a>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
